@@ -16,6 +16,14 @@ En lugar de asignar puntuaciones arbitrarias o determinar si un desarrollador es
 
 El sistema está diseñado para ejecutarse mediante contenedores y puede desplegarse en AWS utilizando Terraform, permitiendo reproducir la infraestructura sin depender de una configuración manual.
 
+## Lo que no es
+
+CommitLens no es una herramienta de vigilancia de desarrolladores.
+
+No busca determinar quién es un "mejor" desarrollador, medir productividad individual ni generar rankings.
+
+Tampoco pretende reducir la salud de un proyecto a una única puntuación. Su objetivo es proporcionar datos objetivos y contextualizados sobre la actividad y evolución del proyecto para facilitar el análisis por parte del equipo.
+
 ## Qué analiza
 
 ### Actividad de contribución
@@ -122,6 +130,13 @@ Los datos derivados del historial de Git pueden revelar información sensible so
 
 CommitLens está diseñado para ejecutarse dentro de la infraestructura del equipo. La aplicación puede ejecutarse localmente mediante Docker o desplegarse en AWS mediante Terraform.
 
+## Arquitectura Macro
+
+EL siguiente gráfico detalla cómo se componen los componentes principales y su comunicación:
+
+![Logo del proyecto](Arquitectura/ArquitecturaMacro.png)
+
+
 ## Infraestructura
 
 La infraestructura forma parte fundamental del proyecto.
@@ -144,14 +159,6 @@ La infraestructura forma parte fundamental del proyecto.
 * **Contenedores:** Docker + Docker Compose
 * **Infrastructure as Code:** Terraform
 * **Cloud:** AWS
-
-## Lo que no es
-
-CommitLens no es una herramienta de vigilancia de desarrolladores.
-
-No busca determinar quién es un "mejor" desarrollador, medir productividad individual ni generar rankings.
-
-Tampoco pretende reducir la salud de un proyecto a una única puntuación. Su objetivo es proporcionar datos objetivos y contextualizados sobre la actividad y evolución del proyecto para facilitar el análisis por parte del equipo.
 
 ## Futuras métricas
 
