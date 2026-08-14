@@ -132,7 +132,7 @@ CommitLens está diseñado para ejecutarse dentro de la infraestructura del equi
 
 ## Arquitectura Macro
 
-EL siguiente gráfico detalla cómo se componen los componentes principales y su comunicación:
+EL siguiente gráfico detalla el sistema en alta escala:
 
 ![Logo del proyecto](Arquitectura/ArquitecturaMacro.png)
 
