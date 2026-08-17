@@ -37,7 +37,7 @@ flowchart TB
 flowchart TB
     admin["👤 Administrador<br/>[Person]<br/>Personal autorizado"]
     github["GitHub<br/>[External System]<br/>Contiene información sobre los commits"]
-    db[("Database<br/>[Container: MySQL]<br/>")]
+    db[("Database<br/>[Container: PostgreSQL]<br/>")]
 
     subgraph webapp["Web Application [Container]"]
         viz["Módulo de visualización<br/>[Component: HTML5/JS]"]
