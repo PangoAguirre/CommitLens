@@ -12,3 +12,6 @@ class gitClient:
         subprocess.run(["git", "config", "--global", "user.email", self.emailUser])
         subprocess.run(["mkdir", "-p", destination_directory + "/" + name])
         subprocess.run(["git", "clone", repository_url, destination_directory + "/" + name])
+
+    def delete_repository(self, name, destination_directory):
+        subprocess.run(["rm", "-rf", f"{destination_directory}/{name}"])
