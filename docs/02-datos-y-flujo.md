@@ -16,8 +16,6 @@ erDiagram
         string default_branch
         string created_at
         string update_at
-        string lenguage_base
-        string metadata
     }
 
     Autor {
