@@ -3,7 +3,7 @@
 ## Modelo C4: Nivel 1 (Contexto)
 
 ```mermaid
-C4Context
+flowchart TB
     admin["👤 Administrador<br/>[Person]<br/>Personal autorizado"]
     commitlens["CommitLens<br/>[Software System]<br/>Sistema analítico"]
     github["Github<br/>[External System]<br/>Fuente de información de commits"]
@@ -15,7 +15,7 @@ C4Context
 ## Modelo C4: Nivel 2 (Contenedores)
 
 ```mermaid
-C4Container
+flowchart TB
     admin["👤 Administrador<br/>[Person]<br/>Personal autorizado"]
     github["GitHub<br/>[External System]<br/>Contiene información sobre los commits"]
 
