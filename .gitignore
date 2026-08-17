@@ -3,6 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Temporales
+API_Service/CloneRepository
+
 # C extensions
 *.so
 
