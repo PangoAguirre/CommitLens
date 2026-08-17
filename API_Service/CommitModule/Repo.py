@@ -1,11 +1,11 @@
 import subprocess
 
-class gitRepoInfo:
+class gitRepo:
 
     def __init__(self):
         pass
 
-    def get_infoRepo(self, repository_url, destination_directory):
+    def get_info(self, repository_url, destination_directory):
         info = []
         name = self.get_nameRepo(repository_url)
         owner = self.get_ownerRepo(repository_url)
