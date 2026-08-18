@@ -58,6 +58,7 @@ class Database:
         self.cursor.execute(self.initAuthorTable)
         self.cursor.execute(self.RepoTable)
         self.cursor.execute(self.FilesChangesTable)
+        self.cursor.execute(self.UserTable)
         self.connection.commit()
 
     def close(self):
