@@ -8,3 +8,6 @@ class dbClient:
             user=user,
             password=password
         )
+
+    def get_cursor(self):
+        return self.connection.cursor()
